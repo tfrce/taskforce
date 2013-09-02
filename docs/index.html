@@ -1,0 +1,457 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>docs - Octostrap</title>
+    <meta name="author" content="bobwaycott">
+
+    
+    <meta name="description" content="Contents What is Octostrap
+Bootstrap v2 and v3 Supported
+Octostrap Demo
+The Impatient Guide to Getting Started
+The Complete Guide to Getting Started &hellip;">
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="canonical" href="http://tfrce.github.io/taskforce/docs">
+    <link href="/taskforce/favicon.png" rel="icon">
+
+    <!-- Bootstrap -->
+    <link href="/taskforce/stylesheets/bootstrap/v3/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/taskforce/stylesheets/site.css" rel="stylesheet" media="screen">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          
+          <li ><a href="/taskforce">Home</a></li>
+          <li ><a href="/taskforce/blog/">Blog</a></li>
+          <li class="active"><a href="/taskforce/docs/">Docs</a></li>
+        </ul> <!-- /nav -->
+        <h3 class="text-muted"><a href="/taskforce/">Octostrap</a></h3>
+      </div> <!-- /header -->
+
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+      <div class="marketing">
+        <h1>Contents</h1>
+
+<ul>
+<li><a href="#what-is-octostrap">What is Octostrap</a></li>
+<li><a href="#bootstrap-v2-and-v3-supported">Bootstrap v2 and v3 Supported</a></li>
+<li><a href="#immediate-gratification-for-the-internet-generation">Octostrap Demo</a></li>
+<li><a href="#the-impatient-guide-to-getting-started">The Impatient Guide to Getting Started</a></li>
+<li><a href="#the-complete-guide-to-getting-started">The Complete Guide to Getting Started</a></li>
+<li><a href="#full-example-what-does-setup-look-like">Full Example: What Does Setup Look Like?</a></li>
+<li><a href="#github-pages-setup-being-super-helpful">Github Pages: Setup being super helpful</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+<li><a href="#stuff-to-do">Stuff to Do</a></li>
+<li><a href="#whats-missing">What&rsquo;s Missing</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+
+
+<h2>What is Octostrap?</h2>
+
+<p>Octostrap is <a href="http://octopress.org">Octopress</a> blogging at its finest. And by finest, that means <a href="http://getbootstrap.com">Bootstrap</a>.</p>
+
+<p>Basically, we&rsquo;re just getting started, and we&rsquo;ve stuck to getting a runnable Octopress+Bootstrap environment going in under 5 minutes (and that&rsquo;s if you&rsquo;re internet connection is slow).</p>
+
+<h2>Bootstrap v2 and v3 Supported</h2>
+
+<p>Octostrap includes support for Bootstrap versions 2 and the currently in-development version 3 variant. Simply path your CSS and JS imports with <code>/v2/</code> and <code>/v3/</code> to select your version.</p>
+
+<h2>Immediate Gratification for the Internet Generation</h2>
+
+<h3><a href="http://bobwaycott.github.io/octotest/">Do you want to see what Octostrap looks like?</a></h3>
+
+<p><strong>Still interested? Read on!</strong></p>
+
+<p>Okay, here&rsquo;s the fun part.</p>
+
+<p><strong>[Note: We assume you&rsquo;re starting with an empty repo for your project]</strong></p>
+
+<h2>The Impatient Guide to Getting Started</h2>
+
+<h3>Assumptions:</h3>
+
+<p>The <em>Impatient Guide to Getting Started</em> assumes the following:</p>
+
+<ul>
+<li>You already have Ruby 1.9.3 installed on your system (whether as default, or via rbenv/rvm)</li>
+<li>You already have <code>bundler</code> installed on your system</li>
+<li>You have probably setup Octopress or Jekyll before</li>
+</ul>
+
+
+<p>Not you? Checkout <a href="#the-complete-guide-to-getting-started"><em>The Complete Guide to Getting Started</em></a> instead.</p>
+
+<h3>Clone Octostrap</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git clone https://github.com/bobwaycott/octostrap.git your_project_dir
+</span><span class='line'>$ cd your_project_dir</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Install dependencies</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ bundle install</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Octostrap Setup</h3>
+
+<p>Let&rsquo;s tell Octostrap to setup our new site.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rake setup</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Done! Seriously. That is all.</strong></p>
+
+<h3>Octostrap Preview</h3>
+
+<p>Ready to see verify Octostrap is working?</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rake preview</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Visit <code>http://localhost:4000/</code> in your browser. See Octostrap. Shed tears (of joy).</p>
+
+<p>Let&rsquo;s see <a href="#full-example-what-does-setup-look-like">what setup looks like</a>.</p>
+
+<h2>The Complete Guide to Getting Started</h2>
+
+<p>Okay, so you&rsquo;ve never installed Octopress or Jekyll before. This guide is for you. We&rsquo;ll cover just about all you need to know&mdash;or at least point you in the right direction to resources that will more fully explain what you need to do.</p>
+
+<p>Here are the critical bits you must solve on your end:</p>
+
+<ul>
+<li>Install Git</li>
+<li>Install Ruby 1.9.3 (Octostrap expects 1.9.3-p194; newer versions should be fine)</li>
+<li>Install Bundler</li>
+</ul>
+
+
+<p>We expect most users to have a preferred way of getting this done on their systems. We use OSX + <a href="http://brew.sh">Homebrew</a>. If you&rsquo;re on Linux/Unix, trust your distro&rsquo;s package manager to get <strong>git</strong> and <strong>ruby</strong> installed (if they aren&rsquo;t already).</p>
+
+<h3>Clone Octostrap</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git clone git@github.com:bobwaycott/octostrap.git your_project_dir
+</span><span class='line'>$ cd your_project_dir</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Alright, Octostrap cloned and we&rsquo;re in the project directory.</p>
+
+<h3>Install Dependencies</h3>
+
+<p>Make sure Ruby is reporting the right version.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ruby --version
+</span><span class='line'>ruby 1.9.3-p194</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Not what you see? Then you&rsquo;ll need to fix that. Check out the <a href="#rbenv-or-rvm">rbenv or rvm section</a> before continuing.</p>
+
+<p>Okay, you should have Ruby 1.9.3 installed by now. Time to install dependencies:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ gem install bundler
+</span><span class='line'>$ rbenv rehash # if you're using rbenv, you must do this so you can use the bundle command
+</span><span class='line'>$ bundle install</span></code></pre></td></tr></table></div></figure>
+
+
+<p>When <code>bundle install</code> completes without errors, you should have everything you need to start using Octostrap.</p>
+
+<h3>Octostrap Setup</h3>
+
+<p>Let&rsquo;s tell Octostrap to setup our new site. If all dependencies were installed, you should not encounter any errors, and you should be able to let the Octostrap Friendly Setter-Upper&trade; walk you through all the steps to get your Octostrap site ready to go.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rake setup</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Done! Seriously. That is all.</strong></p>
+
+<h3>Octostrap Preview</h3>
+
+<p>Ready to see verify Octostrap is working?</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rake preview</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Visit <code>http://localhost:4000/</code> in your browser. See Octostrap. Shed tears (of joy).</p>
+
+<p>Let&rsquo;s see <a href="#full-example-what-does-setup-look-like">what setup looks like</a>.</p>
+
+<h2>rbenv or rvm</h2>
+
+<p>Shouldn&rsquo;t matter. You can probably do just fine without either if you don&rsquo;t do anything else with Ruby on your system and don&rsquo;t need different versions. If you are considering using either of those tools to simplify your life, allow us to put in a good word for <code>rbenv</code>. We like it.</p>
+
+<p><strong>Want rbenv?</strong> Make sure you&rsquo;ve already installed <code>git</code> on your system. Once you know you&rsquo;re ready, <a href="https://github.com/sstephenson/rbenv#installation">head over to rbenv&rsquo;s installation instructions</a>. If you&rsquo;re on OS X, you can even <a href="https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x">install easily with Homebrew</a>. Make sure to come back when you&rsquo;re ready to proceed.</p>
+
+<p><strong>Want rvm?</strong> Then just <a href="https://rvm.io/rvm/install">head over to rvm&rsquo;s installation instructions</a>. Make sure to come back when you&rsquo;re ready to proceed.</p>
+
+<h2>Full Example: What does setup look like?</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rake setup
+</span><span class='line'>
+</span><span class='line'>## Copying StarterPack into ./source ...
+</span><span class='line'>mkdir -p source data config public
+</span><span class='line'>cp -r .starterpack/source/. source
+</span><span class='line'>cp .starterpack/configs/config.yml.example config/config.yml
+</span><span class='line'>cp .starterpack/configs/dirs.yml.example config/dirs.yml
+</span><span class='line'>cp .starterpack/configs/deploy.yml.example config/deploy.yml
+</span><span class='line'>## StarterPack copied. You can now `rake preview` and see your Octostrap site when setup is complete.
+</span><span class='line'>
+</span><span class='line'>Octostrap includes Event functionality that can now be included
+</span><span class='line'>  Note: This is intended for campaign/political action sites that need to organize protests/events
+</span><span class='line'>
+</span><span class='line'>Would you like to setup Octostrap Events? [y/n] y
+</span><span class='line'>
+</span><span class='line'>Starting Events setup ...
+</span><span class='line'>cp -r .starterpack/events/. source/_layouts/
+</span><span class='line'>mkdir -p data
+</span><span class='line'>cp -r .starterpack/data/. data
+</span><span class='line'>
+</span><span class='line'>Events setup complete!
+</span><span class='line'>
+</span><span class='line'>Would you like to proceed with Github repo setup? [y/n] y
+</span><span class='line'>
+</span><span class='line'>Starting Github setup ...
+</span><span class='line'>Enter the read/write url for your repository
+</span><span class='line'>(For example, 'git@github.com:your_username/your_repo.git')
+</span><span class='line'>           or 'https://github.com/your_username/your_repo.git')
+</span><span class='line'>
+</span><span class='line'>Repository url: git@github.com:your_username/your_repo.git
+</span><span class='line'>
+</span><span class='line'>Altering git config to use git@github.com:your_username/your_repo.git as origin...
+</span><span class='line'>
+</span><span class='line'>Renaming remote origin to octostrap
+</span><span class='line'>Added remote git@github.com:your_username/your_repo.git as origin
+</span><span class='line'>Set origin as default remote
+</span><span class='line'>
+</span><span class='line'>I can go ahead and push this to origin if you'd like
+</span><span class='line'>NOTE: You should only do this with a bare repository and an internet connection
+</span><span class='line'>
+</span><span class='line'>Shall I push to your repo? [y/n] y
+</span><span class='line'>
+</span><span class='line'>Pushing to your repo ...
+</span><span class='line'>
+</span><span class='line'>Counting objects: 460, done.
+</span><span class='line'>Delta compression using up to 8 threads.
+</span><span class='line'>Compressing objects: 100% (249/249), done.
+</span><span class='line'>Writing objects: 100% (460/460), 309.38 KiB | 0 bytes/s, done.
+</span><span class='line'>Total 460 (delta 194), reused 453 (delta 191)
+</span><span class='line'>To git@github.com:username/repo_name.git
+</span><span class='line'> * [new branch]      master -&gt; master
+</span><span class='line'>Branch master set up to track remote branch master from origin.
+</span><span class='line'>
+</span><span class='line'>---
+</span><span class='line'>## Takeover complete! ##
+</span><span class='line'>
+</span><span class='line'>Would you like to proceed with Github Pages setup? [y/n] y
+</span><span class='line'>
+</span><span class='line'>Starting Github Pages setup ...
+</span><span class='line'>
+</span><span class='line'>rm -rf public
+</span><span class='line'>mkdir -p public/your_repo
+</span><span class='line'>## Site's root directory is now '/your_repo' ##
+</span><span class='line'>rm -rf _deploy
+</span><span class='line'>mkdir _deploy
+</span><span class='line'>cd _deploy
+</span><span class='line'>Initialized empty Git repository in /Users/bob/dev/github/quick_test/_deploy/.git/
+</span><span class='line'>[master (root-commit) 5bbf570] Octostrap init
+</span><span class='line'> 1 file changed, 1 insertion(+)
+</span><span class='line'> create mode 100644 index.html
+</span><span class='line'>cd -
+</span><span class='line'>
+</span><span class='line'>---
+</span><span class='line'>## Success! Now you can deploy to http://your_username.github.io/your_repo with `rake gen_deploy` ##</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Github Pages: Setup being super helpful</h2>
+
+<p>Okay, so you ran <code>rake setup</code> and told Octostrap to setup Github Pages. Ready to prove that everything worked?</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rake gen_deploy</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Watch as your Octostrap site is uploaded to Github before your eyes. Wahoo.</p>
+
+<p><strong>Disclaimer:</strong> <em>Github can take up to 10 minutes to register your new site before you&rsquo;ll see it. But trust us. This works.</em></p>
+
+<p><strong>[IMPORTANT]</strong>
+When you <code>setup_github_pages</code>, your site root is going to switch to be the <code>repo_name</code> name from your Github repo instead of the default <code>/</code> path. This ensures that all assets have properly generated URLs (or else Github Pages won&rsquo;t show you any Bootstrap prettiness). This means that when you <code>rake preview</code> an Octostrap site that has Github Pages enabled, you&rsquo;ll visit <code>http://localhost:4000/repo_name/</code> instead of the default <code>http://localhost:4000/</code> location.</p>
+
+<h2>Additional Documentation</h2>
+
+<p>Check out <a href="http://octopress.org/docs">Octopress docs</a> for guides and documentation specific to Octopress.</p>
+
+<p>Check out <a href="http://jekyllrb.com">Jekyll docs</a> for guides and documentation specific to Jekyll (which powers all of this).</p>
+
+<p>Check out <a href="http://getbootstrap.com/getting-started/">Bootstrap docs</a> for guides and documentation specific to Bootstrap.</p>
+
+<h2>Stuff to Do</h2>
+
+<p>Here&rsquo;s a quick list of things that are totally untested that tend to work out-of-the-box with vanilla Octopress:</p>
+
+<ul>
+<li>syntax highlighting for code samples</li>
+<li>plugins working with Bootstrap styles</li>
+<li>Octopress-specific JavaScript</li>
+<li>Bootstrap JavaScript-based components and interactivity</li>
+<li>probably more</li>
+</ul>
+
+
+<h2>What&rsquo;s Missing</h2>
+
+<p><strong>SASS/LESS.</strong></p>
+
+<p>Bootstrap CSS and JavaScript is included in the <code>source/stylesheets/bootstrap</code> and <code>source/javascripts/bootstrap</code> folders, respectively. There&rsquo;s a couple example pages included and example layouts. We haven&rsquo;t even begun to dig into allowing Bootstrap styles to work in SASS/LESS form.</p>
+
+<h2>Contributing</h2>
+
+<p><a href="https://travis-ci.org/bobwaycott/octostrap"><img src="https://travis-ci.org/bobwaycott/octostrap.png?branch=master" alt="Build Status" /></a></p>
+
+<p>We love to see people contributing to Octostrap, whether it&rsquo;s a bug report, feature suggestion or a pull request. At the moment, there&rsquo;s plenty left to get working just right in Octostrap, some of which is noted in the <strong>Stuff to Do</strong> section.</p>
+
+<h2>License</h2>
+
+<p>(The MIT License)</p>
+
+<p>Copyright © 2013 Bob Waycott</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the ‘Software’), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED ‘AS IS’, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+<h4>If you want to be awesome.</h4>
+
+<ul>
+<li>Proudly display the &lsquo;Powered by <em>Octopress</em> and <em>Bootstrap</em>&rsquo; credit in the footer of your Octostrap site.</li>
+<li>Be active and healthy.</li>
+<li>Love people.</li>
+<li>Make the world a better place.</li>
+</ul>
+
+
+
+      </div> <!-- /marketing -->
+
+      <div class="footer">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Copyright &copy; 2013 - bobwaycott -
+          <span class="credit">Powered by <a href="http://octopress.org">Octopress</a> &amp; <a href="http://getbootstrap.com">Bootstrap</a></span>
+        </p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- UNUSED but included to show how you can load in jQuery + Bootstrap JS
+      <script src="/taskforce/javascripts/libs/jquery.min.js"></script>
+      <script src="/taskforce/javascripts/bootstrap/v3/bootstrap.js"></script>
+    -->
+    <script src="/taskforce/javascripts/site.js"></script>
+  </body>
+</html>
