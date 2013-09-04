@@ -2,7 +2,17 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  border-top: 5px solid #C12B2C;
 }
+
+.header .nav> li > a {
+  color: #fff;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+  background-color: none;
+}
+
 
 /* Everything but the jumbotron gets side spacing for mobile-first views */
 .header,
@@ -12,10 +22,11 @@ body {
   padding-right: 15px;
 }
 
-/* Custom page header */
+/* Custom page header
 .header {
   border-bottom: 1px solid #e5e5e5;
 }
+*/
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   margin-top: 0;
@@ -35,14 +46,21 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+  background-color: #C12B2C;
+}
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
 /* Main marketing message and sign up button */
 .jumbotron {
+  background-color: transparent;
+  color: whitesmoke;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
+
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
@@ -92,7 +110,7 @@ body {
 
 /* Thin out the marketing headings */
 .featurette-heading {
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
@@ -109,10 +127,50 @@ body {
   }
   /* Space out the masthead */
   .header {
-    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-top: 30px;
   }
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+    background-color: transparent;
+    color: whitesmoke;
+    text-align: center;
   }
+}
+
+.jumbotron h1 {
+ font-family: Times;
+}
+
+body {
+  padding-top: 0px;
+}
+
+.menu, .first {
+  background-color: #292929;
+}
+
+.third {
+  background-color: #C12B2C;
+}
+.second, .fourth, .footer {
+  background-color: #ECF0F1;
+}
+
+.fourth {
+  padding-bottom: 60px;
+}
+
+.btn-success, .btn-success:hover {
+  color: #FFF;
+  background-color: #C12B2C;
+  border-color: #C12B2C;
+}
+
+.marketing > section {
+  padding-top: 60px;
+}
+.nav>li>a:hover, .nav>li>a:focus {
+  background-color: transparent;
 }

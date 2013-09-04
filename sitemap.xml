@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://tfrce.github.io/taskforce/blog/2013/08/05/blog-example-101/</loc>
-        <lastmod>2013-09-02T17:21:38-04:00</lastmod>
+        <loc>http://yoursite.com/blog/2013/08/05/blog-example-101/</loc>
+        <lastmod>2013-09-04T10:48:29-04:00</lastmod>
     </url>
     <url>
-        <loc>http://tfrce.github.io/taskforce/blog/archives/</loc>
-        <lastmod>2013-09-02T17:21:38-04:00</lastmod>
+        <loc>http://yoursite.com/blog/archives/</loc>
+        <lastmod>2013-09-04T10:48:29-04:00</lastmod>
     </url>
     <url>
-        <loc>http://tfrce.github.io/taskforce/blog/</loc>
-        <lastmod>2013-09-02T17:21:38-04:00</lastmod>
+        <loc>http://yoursite.com/blog/</loc>
+        <lastmod>2013-09-04T10:48:29-04:00</lastmod>
     </url>
     <url>
-        <loc>http://tfrce.github.io/taskforce/docs/</loc>
-        <lastmod>2013-09-02T17:21:38-04:00</lastmod>
+        <loc>http://yoursite.com/</loc>
+        <lastmod>2013-09-04T10:48:39-04:00</lastmod>
     </url>
     <url>
-        <loc>http://tfrce.github.io/taskforce/</loc>
-        <lastmod>2013-09-02T17:21:38-04:00</lastmod>
+        <loc>http://yoursite.com/robots.txt</loc>
+        <lastmod>2013-09-04T10:46:06-04:00</lastmod>
     </url>
     <url>
-        <loc>http://tfrce.github.io/taskforce/robots.txt</loc>
-        <lastmod>2013-09-02T17:21:38-04:00</lastmod>
+        <loc>http://yoursite.com/docs/</loc>
+        <lastmod>2013-09-04T10:48:29-04:00</lastmod>
     </url>
 </urlset>
