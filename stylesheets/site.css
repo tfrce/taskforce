@@ -155,6 +155,10 @@ body {
   background-color: #C12B2C;
 }
 
+.member a{
+  color: white;
+}
+
 .second, .fourth, .footer {
   background-color: #ECF0F1;
 }
