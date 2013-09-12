@@ -154,6 +154,7 @@ body {
 .third {
   background-color: #C12B2C;
 }
+
 .second, .fourth, .footer {
   background-color: #ECF0F1;
 }
@@ -170,6 +171,7 @@ body {
 
 .marketing > section {
   padding-top: 60px;
+  padding-bottom: 30px;
 }
 .nav>li>a:hover, .nav>li>a:focus {
   background-color: transparent;
