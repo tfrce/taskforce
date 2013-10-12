@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://tfrc.github.io/taskforce/sitemap.xml 
+Sitemap: http://tfrce.github.io/taskforce//sitemap.xml 
